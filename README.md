@@ -8,12 +8,14 @@
 ### 安装
 
 ```bash
-npm install hexo-translate-title --save
+npm install hexo-translate-title-kitety --save
 ```
 
 ### 使用
 
 #### 1.配置hexo根项目下的`_config.yml`
+
+默认会在开发环境自动设置google的is_need_proxy为开启代理
 
 ```yml
 translate_title:
@@ -24,6 +26,7 @@ translate_title:
   proxy_url: http://localhost:50018 # Your proxy_url
   baidu_appid: '' # Your baidu_appid
   baidu_appkey: '' # Your baidu_appkey
+  actions: boolean # 是不是github actions之类的发布操作，那些环境不需要代理
   rewrite: false # is rewrite true | false 
 ```
 **注意**：
